@@ -1,0 +1,30 @@
+body {
+    font-family: 'Proxima Nova Rg';
+    background-color: #f9f7f7;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Circular Std Black';
+    color: #3f72af;
+}
+
+.heading {
+    font-family: 'Circular Std Black';
+    /* font-weight: bold; */
+}
+
+.heading-2 {
+    font-family: 'Circular Std';
+}
+
+.img-profile {
+    filter: grayscale(10);
+}
+
+.mt-6 {
+    margin-top: 7rem !important;
+}
+
+.social:hover {
+    color: #0d6efd !important;
+}
