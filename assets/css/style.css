@@ -1,6 +1,7 @@
 body {
     font-family: 'Proxima Nova Rg';
     background-color: #f9f7f7;
+    color: #112d4e;
 }
 
 h1, h2, h3, h4, h5 {
@@ -15,6 +16,7 @@ h1, h2, h3, h4, h5 {
 
 .heading-2 {
     font-family: 'Circular Std';
+    color: #364f6b;
 }
 
 .img-profile {
@@ -27,4 +29,8 @@ h1, h2, h3, h4, h5 {
 
 .social:hover {
     color: #0d6efd !important;
+}
+
+.bg-about {
+    background-color: #dbe2ef;
 }
