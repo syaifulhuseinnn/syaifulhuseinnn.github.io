@@ -34,3 +34,12 @@ h1, h2, h3, h4, h5 {
 .bg-about {
     background-color: #dbe2ef;
 }
+
+.nav-link {
+    font-family: 'Circular Std';
+    color: #3f72af;
+}
+
+.dark-mode:hover {
+    color: black !important;
+}
