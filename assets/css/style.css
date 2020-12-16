@@ -40,6 +40,28 @@ h1, h2, h3, h4, h5 {
     color: #3f72af;
 }
 
-.dark-mode:hover {
+.dark-mode-btn:hover {
     color: black !important;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode-about {
+    background-color: #bbe1fa;
+    color: black;
+}
+
+.dark-mode-accomplishments > h5 {
+    color: #bbe1fa;
+}
+
+.btn-dark-mode {
+    color: #f2a365 !important;
+}
+
+.btn-dark-mode:hover {
+    color: white !important;
 }

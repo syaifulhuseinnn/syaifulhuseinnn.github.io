@@ -20,8 +20,8 @@
     <title>🧑Hello, world!</title>
   </head>
   <body>
-    <div class="container-fluid bg-about p-0"> <!-- Start Container -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-about">
+    <div id="about" class="container-fluid bg-about p-0"> <!-- Start Container -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container flex-row-reverse">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
             <div class="navbar-nav align-items-center">
               <a class="nav-link active h6 mx-3" aria-current="page" href="#">About</a>
               <a class="nav-link h6 mx-3" href="#">Stories</a>
-              <button class="btn dark-mode" style="color: #3f72af;" type="button"><i class="fas fa-moon fa-flip-horizontal fa-lg"></i></button>
+              <button id="dark-mode" class="btn dark-mode-btn" style="color: #3f72af;" type="button" onclick="darkMode()"><i class="fas fa-moon fa-flip-horizontal fa-lg"></i></button>
             </div>
           </div>
         </div>
@@ -55,12 +55,12 @@
       </div>
     </div>
     <div class="container">
-      <div id="accomplishments" class="mt-5"> <!-- Start Accomplishments -->
+      <div class="mt-5"> <!-- Start Accomplishments -->
         <h2 class="heading">Accomplishments</h2>
-        <div class="row mt-3 gy-4 justify-content-between">
+        <div id="accomplishments" class="row mt-3 gy-4 justify-content-between">
           <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <div class="">
-              <h5 class="heading-2"><strong>Best Talent IndonesiaNext 2017 by Telkomsel</strong></h5>
+              <h5><strong>Best Talent IndonesiaNext 2017 by Telkomsel</strong></h5>
               <p class="lead">
                 Successfully entered the 20 best talents from all over Indonesia to follow the bootcamp communication skills, digital marketing and innovative ideas presentation to Telkomsel. I brought up the idea of Fall Detection.
               </p>
@@ -68,7 +68,7 @@
           </div>
           <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <div class="">
-              <h5 class="heading-2"><strong>Campus Ambassador of INTEL Indonesia</strong></h5>
+              <h5><strong>Campus Ambassador of INTEL Indonesia</strong></h5>
               <p class="lead">
                 Became an ambassador for the INTEL Indonesia campus for a campaign to achieve success at a young age.
               </p>
@@ -76,7 +76,7 @@
           </div>
           <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <div class="">
-              <h5 class="heading-2"><strong>3rd UI/UX Design ARTECHNO USU</strong></h5>
+              <h5><strong>3rd UI/UX Design ARTECHNO USU</strong></h5>
               <p class="lead">
                 The third champion UI/UX Design national competition ARTECHNO USU. Together with our great team, we brought up the idea Sistem Tugas Akhir Online.
               </p>
@@ -84,7 +84,7 @@
           </div>
           <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
             <div class="">
-              <h5 class="heading-2"><strong>1st Information Technology Business Development ITFEST USU</strong></h5>
+              <h5><strong>1st Information Technology Business Development ITFEST USU</strong></h5>
               <p class="lead">
                 ITFEST USU is IT competition in region Sumatera Utara. The first champion IT Business Development with idea app plant marketplace.
               </p>
@@ -95,20 +95,20 @@
       <div id="story" class="mt-5"> <!-- Start Story -->
         <h2 class="heading">Story</h2>
         <div id="item" class="mt-5"> 
-          <h5 class="heading-2"><strong>Chrome Extension: Manipulate Kibana Web HTML Element</strong></h5>
+          <h5><strong>Chrome Extension: Manipulate Kibana Web HTML Element</strong></h5>
           <p class="lead">
             Kibana is a free and open user interface that lets you visualize your Elasticsearch data and navigate the Elastic Stack. Do anything from tracking query load to understanding the way requests flow through your apps. If today you are using Kibana version 7.6.0 And you having trouble with the input filter... <a href="https://syaifulhuseinnn.github.io/manipulate-kibana-element" class="text-decoration-none"><strong>read more</strong></a>
           </p>
         </div>
         <div id="item" class="mt-5"> 
-          <h5 class="heading-2"><strong>Fall Detection App — UX Case Study</strong></h5>
+          <h5><strong>Fall Detection App — UX Case Study</strong></h5>
           <p class="lead">
             This UX Case Study is based on my idea when I joined IndonesiaNEXT 2017 by TELKOMSEL. I succeeded in the top 30 from all around Indonesia. Yeah, it’s one of my achievement during college. It’s the best moment!!
             For your information, IndonesiaNEXT is a CSR program by TELKOMSEL... <a href="https://blog.prototypr.io/fall-detection-app-ux-case-study-1889e16df26a" class="text-decoration-none"><strong>read more</strong></a>
           </p>
         </div>
         <div id="item" class="mt-5">
-          <h5 class="heading-2"><strong>FASILKOM-TI BANGGA</strong></h5>
+          <h5><strong>FASILKOM-TI BANGGA</strong></h5>
           <p class="lead">
             Selamat kepada :
             Tama Loy Dennis Munthe - 141402100,
@@ -120,7 +120,7 @@
           </p>
         </div>
         <div id="item" class="mt-5">
-          <h5 class="heading-2"><strong>#HIMATIFPROUD</strong></h5>
+          <h5><strong>#HIMATIFPROUD</strong></h5>
           <p class="lead">
             Selamat kepada :
             M Aidiel Rachman P (TI 2014),
@@ -130,7 +130,7 @@
           </p>
         </div>
         <div id="item" class="mt-5">
-          <h5 class="heading-2"><strong>Direktori USU</strong></h5>
+          <h5><strong>Direktori USU</strong></h5>
           <p class="lead">
             Direktori USU adalah web application untuk melihat data profile dari setiap sivitas akademika seperti Dosen, Tenaga Pendidik, dan Mahasiswa. Aplikasi ini dibangun dengan menggunakan HTML, CSS, JavaScript, Bootstrap 4, dan jQuery untuk sisi clientnya. Di sisi backend dibangun dengan bahasa pemrograman PHP menggunakan framework Laravel...  <a href="http://direktori.usu.ac.id/" class="text-decoration-none"><strong>read more</strong></a>
           </p>
@@ -164,6 +164,21 @@
       <h6 class="text-center text-muted mb-3"><small>Syaiful Anwar Husen Lubis &copy 2020</small></h6>
     </div> <!-- End Container -->
 
+    <!-- Script Dark Mode-->
+    <script>
+      function darkMode() {
+        let body = document.body
+        let about = document.getElementById("about")
+        let accomplishments = document.getElementById("accomplishments")
+        let btn_dark_mode = document.getElementById("dark-mode")
+        
+        
+        body.classList.toggle("dark-mode")
+        about.classList.toggle("dark-mode-about")
+        btn_dark_mode.classList.toggle("btn-dark-mode")
+        accomplishments.classList.toggle("dark-mode-accomplishments")
+      }
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
