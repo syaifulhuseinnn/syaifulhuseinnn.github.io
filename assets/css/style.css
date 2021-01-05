@@ -62,10 +62,57 @@ h5 {
     color: #bbe1fa;
 }
 
+.btn-dark-mode::before {
+	content: '🌛';
+}
+
 .btn-dark-mode {
-    color: #f2a365 !important;
+	height: 45px; 
+	width: 45px; 
+	border: 1px solid darkgrey; 
+	border-radius: 100%;
 }
 
 .btn-dark-mode:hover {
-    color: white !important;
+    background-color: black;
+}
+
+.btn-light-mode::before {
+	content: '🌞';
+}
+
+.btn-light-mode {
+	height: 45px; 
+	width: 45px; 
+	border: 1px solid white; 
+	border-radius: 100%;
+}
+
+.btn-light-mode:hover {
+    background-color: #dbe2ef;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 960px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.container {max-width: 900px;}
+}
+
+/* Extra Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+	.container {max-width: 900px;}
 }

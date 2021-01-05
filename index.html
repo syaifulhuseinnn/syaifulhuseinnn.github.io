@@ -22,30 +22,18 @@
     <title>🧑Hello, world!</title>
   </head>
   <body>
-    <div id="about" class="container-fluid bg-about p-0"> <!-- Start Container -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container flex-row-reverse px-3">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
-            <div class="navbar-nav align-items-center">
-              <a class="nav-link active h6 mx-3" aria-current="page" href="#">About</a>
-              <a class="nav-link h6 mx-3" href="#">Stories</a>
-              <button id="dark-mode" class="btn dark-mode-btn" style="color: #3f72af;" type="button" onclick="darkMode()"><i class="fas fa-moon fa-flip-horizontal fa-lg"></i></button>
-            </div>
-          </div>
-        </div>
-      </nav>
+	<div id="about" class="container-fluid bg-about p-0"> <!-- Start Container -->
       <div class="container px-3">
+		<div class="d-flex justify-content-end">
+			<button id="dark-mode" class="btn btn-dark-mode mt-3" type="button" onclick="darkMode()"></button>
+		</div>
         <div style="height: 100%;">
           <div class="h-auto d-inline-block my-5">
             <div class="row">
-              <div class="col-5 col-sm-5 col-md-2 col-xl-2 col-xxl-2">
+              <div class="col-5 col-sm-5 col-md-3 col-xl-3 col-xxl-3">
                 <img src="assets/images/IMG_4716 (2).jpg" class="img-fluid rounded" alt="">
               </div>
-              <div class="col-12 col-sm-12 col-md-10 col-xl-10 col-xxl-10 align-self-center">
+              <div class="col-12 col-sm-12 col-md-9 col-xl-9 col-xxl-9 align-self-center">
                 <h1 class="mt-2">Hi, I'm Syaiful!</h1>
                 <p class="lead">A person who likes visual design. Passionate about software engineering and UI/UX Design. One
                   year more experienced in the software engineering field. Eager to learn about frontend technology
@@ -57,43 +45,6 @@
       </div>
     </div>
     <div class="container px-3">
-      <div class="mt-5"> <!-- Start Accomplishments -->
-        <h2 class="heading">Accomplishments</h2>
-        <div id="accomplishments" class="row mt-3 gy-4 justify-content-between">
-          <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <div class="">
-              <h5><strong>Best Talent IndonesiaNext 2017 by Telkomsel</strong></h5>
-              <p class="lead">
-                Successfully entered the 20 best talents from all over Indonesia to follow the bootcamp communication skills, digital marketing and innovative ideas presentation to Telkomsel. I brought up the idea of Fall Detection.
-              </p>
-            </div>
-          </div>
-          <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <div class="">
-              <h5><strong>Campus Ambassador of INTEL Indonesia</strong></h5>
-              <p class="lead">
-                Became an ambassador for the INTEL Indonesia campus for a campaign to achieve success at a young age.
-              </p>
-            </div>
-          </div>
-          <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <div class="">
-              <h5><strong>3rd UI/UX Design ARTECHNO USU</strong></h5>
-              <p class="lead">
-                The third champion UI/UX Design national competition ARTECHNO USU. Together with our great team, we brought up the idea Sistem Tugas Akhir Online.
-              </p>
-            </div>
-          </div>
-          <div class="col col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <div class="">
-              <h5><strong>1st Information Technology Business Development ITFEST USU</strong></h5>
-              <p class="lead">
-                ITFEST USU is IT competition in region Sumatera Utara. The first champion IT Business Development with idea app plant marketplace.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> <!-- End Accomplishments -->
       <div id="story" class="mt-5"> <!-- Start Story -->
         <h2 class="heading">Story</h2>
         <div id="item" class="mt-5"> 
@@ -171,14 +122,12 @@
       function darkMode() {
         let body = document.body
         let about = document.getElementById("about")
-        let accomplishments = document.getElementById("accomplishments")
         let btn_dark_mode = document.getElementById("dark-mode")
         
         
         body.classList.toggle("dark-mode")
         about.classList.toggle("dark-mode-about")
-        btn_dark_mode.classList.toggle("btn-dark-mode")
-        accomplishments.classList.toggle("dark-mode-accomplishments")
+		btn_dark_mode.classList.toggle("btn-light-mode")
       }
     </script>
     <!-- Optional JavaScript; choose one of the two! -->
